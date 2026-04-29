@@ -7,8 +7,8 @@ def mounika(request):
     return HttpResponse("mounika is a student")
 def home(request):
     return render(request,'home.html')
-def singledata(request):
-    object=student.objects.get(id=1)
+def singledata(request,id):
+    object=student.objects.get(id=id)
     return render(request,'singledata.html',{'s':object})
 def mul_data(request):
     object=student.objects.all()

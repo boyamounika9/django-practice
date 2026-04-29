@@ -5,6 +5,6 @@ from . import views
 urlpatterns = [
     path('mounika/',views.mounika),
     path('home/',views.home),
-    path('singledata/',views.singledata),
+    path('singledata/<int:id>/',views.singledata),
     path('mul_data/',views.mul_data),
 ]
