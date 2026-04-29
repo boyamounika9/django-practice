@@ -6,5 +6,6 @@ urlpatterns = [
     path('mounika/',views.mounika),
     path('home/',views.home),
     path('singledata/<int:id>/',views.singledata),
-    path('mul_data/',views.mul_data),
+    path('mul_data/',views.mul_data,name='mul_data'),
+    path('form/',views.forms)
 ]
